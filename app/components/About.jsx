@@ -9,7 +9,7 @@ const About = ({isDarkMode}) => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1}}
-        id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
+        id='about' className='w-full px-[12%] py-10 scroll-mt-25'>
         <motion.h4
         initial={{opacity: 0, y: -20}}
         whileInView={{opacity: 1, y: 0}}

@@ -10,7 +10,7 @@ const Work = ({isDarkMode}) => {
     whileInView={{opacity: 1}}
     transition={{duration: 1}}
     
-    id='work' className='w-full px-[12%] scroll-mt-20'>
+    id='work' className='w-full px-[12%] scroll-mt-35'>
         <motion.h4
         initial={{y: -20,opacity: 0}}
         whileInView={{y: 0,opacity: 1}}

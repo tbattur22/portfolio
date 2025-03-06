@@ -32,10 +32,10 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
   return (
     <>
-    <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[80%] dark:hidden'>
+    <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
         <Image src={assets.header_bg_color} alt="" className='w-full' />
     </div>
-    <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
+    <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] pt-2 pb-0.1
         flex items-center justify-between z-50 ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-xs dark:bg-dark-theme dark:shadow-white/20 " : ""}`}>
         <a href="" className='flex items-center ml-5 pl-5'>
             <div className='[writing-mode:vertical-lr]'>ᠪᠠᠲᠤᠲᠤᠷᠤ</div>
@@ -48,7 +48,6 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             <li><a className="font-Ovo" href="#about">About Me</a></li>
             <li><a className="font-Ovo" href="#services">Services</a></li>
             <li><a className="font-Ovo" href="#work">My Work</a></li>
-            <li><a className="font-Ovo" href="#contact">Contact Me</a></li>
         </ul>
 
         <div className='flex items-center gap-4'>
@@ -76,7 +75,6 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                 <li><a className="font-Ovo" onClick={closeSideMenu} href="#about">About Me</a></li>
                 <li><a className="font-Ovo" onClick={closeSideMenu} href="#services">Services</a></li>
                 <li><a className="font-Ovo" onClick={closeSideMenu} href="#work">My Work</a></li>
-                <li><a className="font-Ovo" onClick={closeSideMenu} href="#contact">Contact Me</a></li>
             </ul>
     </nav>
     </>
