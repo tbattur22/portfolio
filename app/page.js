@@ -7,6 +7,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import Footer from "./components/Footer";
+import ContactMe from './components/Contact';
 
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
       <About isDarkMode={isDarkMode}/>
       <Services isDarkMode={isDarkMode}/>
       <Work isDarkMode={isDarkMode}/>
+      <ContactMe />
       <Footer isDarkMode={isDarkMode}/>
     </>
   );

@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "email-validator": "^2.0.4",
     "motion": "^12.4.10",
     "next": "15.2.1",
     "react": "^19.0.0",
