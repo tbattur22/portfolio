@@ -1,8 +1,20 @@
 @import "tailwindcss";
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
 
-* {
-  font-family: Outfit;
+@theme inline {
+  --color-light-hover: #fcf4ff;
+  --color-dark-hover: #2a004a;
+  --color-dark-theme: #11001F;
+  --font-Outfit: "Outfit", sans-serif;
+  --font-Ovo: "Ovo", serif;
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+  --auto-grid-temp-cols: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+@layer utilities {
+  body {
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

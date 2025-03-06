@@ -37,8 +37,10 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import my_profile_pic from './my_profile_pic.png';
 import my_profile_logo from './profile_logo.png';
+import my_photo from './my_photo.jpg'
 
 export const assets = {
+    my_photo,
     my_profile_logo,
     my_profile_pic,
     user_image,
