@@ -1,7 +1,8 @@
 import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { Fragment } from 'react'
 import {motion} from 'motion/react'
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 const About = ({isDarkMode}) => {
   return (
@@ -49,7 +50,7 @@ const About = ({isDarkMode}) => {
                 >I am an experienced Full Stack Developer with over 15 years
                  professional expertise in variety of frontend and backend technologies.
                  Throughout of my career, I have had the previlege of collaborating with
-                 some big organizarion and companies, contributing to their success and growth.
+                 some big organizarions and companies, contributing to their success and growth.
                 </p>
 
                 <motion.ul
@@ -89,18 +90,29 @@ const About = ({isDarkMode}) => {
                 transition={{duration: 1.5, delay: 0.6}}
                 
                 className='flex items-center gap-3 sm:gap-5'>
-                    {toolsData.map((tool, i) => (
+                    {toolsData.map(({icon, tooltip}, i) => (
                         <motion.li
                         whileHover={{ scale: 1.1}}
-                        key={i} className='flex items-center justify-center
+                        key={i} data-tooltip-id={`tool-${i}`}
+                        className='flex items-center justify-center
                         w-12 sm:w-14 aspect-square border border-gray-400
                         rounded-lg cursor-pointer hover:-translate-y-1 duration-500'>
-                            <Image src={tool} alt='' className='w-5 sm:w-7' />
+                            <Image src={icon} alt='' className='w-5 sm:w-7' />
                         </motion.li>
                     ))}
                 </motion.ul>
             </motion.div>
         </motion.div>
+
+        {toolsData.map(({icon, tooltip}, i) => (
+            <ReactTooltip
+            id={`tool-${i}`}
+            key={i}
+            place="top"
+            variant="info"
+            content={tooltip}
+          />
+        ))}
     </motion.div>
   )
 }

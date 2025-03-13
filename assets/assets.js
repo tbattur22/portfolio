@@ -37,7 +37,12 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import my_profile_pic from './my_profile_pic.png';
 import my_profile_logo from './profile_logo.png';
-import my_photo from './my_photo.jpg'
+import my_photo from './my_photo.jpg';
+import reactjs from './reactjs.png';
+import redux from './redux.png';
+import tailwind from './tailwind.png';
+import nextjs from './Next.js.png';
+import docker from './docker.png'
 
 export const assets = {
     my_photo,
@@ -51,6 +56,11 @@ export const assets = {
     project_icon,
     project_icon_dark,
     vscode,
+    reactjs,
+    redux,
+    tailwind,
+    nextjs,
+    docker,
     firebase,
     figma,
     git,
@@ -84,40 +94,68 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Product List Demo Project',
+        description: 'Features: Infinite Scroll/Container Query, Tech Stack: React/JavaScript',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Live Chat App',
+        description: 'Tech Stack: Elixir/Phoenix/LiveView',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'To Do App',
+        description: 'Tech Stack: NextJS/TypeScript',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'WebSite Builder',
+        description: 'Tech Stack: ReactJS/Redux/Elixir/Phoenix',
         bgImage: '/work-4.png',
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Build Frontend UIs and SPA', description: 'A React single-page application (SPA) is a web application that loads a single HTML page and dynamically updates the content as the user interacts with it, without requiring full page reloads. It provides a more fluid and responsive user experience, similar to a desktop application.', link: '' },
+    // { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
+    { icon: assets.ui_icon, title: 'Build Backend Services', description: 'Design, Implement and Test backend services using PHP and Elixir/Phoenix frameworks.', link: '' },
+    { icon: assets.graphics_icon, title: 'Design & Build Database Layer', description: 'Design and implement data storage layer using MySQL/PostGreSQL or MongoDB', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, TypeScript, React Js, Redux, Next Js, PHP, Java, Elixir, MySQL, PostgreSQL' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'MSc Degree in Computer Science, University of Birmingham, UK' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Worked on more than 10 projects of various sizes in different companies.' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    {
+        icon: assets.reactjs,
+        tooltip: "React JS"
+    },
+    {
+        icon: assets.redux,
+        tooltip: "Redux"
+    },
+    {
+        icon: assets.tailwind,
+        tooltip: "Tailwind CSS"
+    },
+    {
+        icon: assets.nextjs,
+        tooltip: "Next JS"
+    },
+    {
+        icon: assets.docker,
+        tooltip: "Docker"
+    },
+    {
+        icon: assets.vscode,
+        tooltip: "VS Code"
+    },
+    {
+        icon: assets.git,
+        tooltip: "Git version control"
+    }
+    // assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
 ];
