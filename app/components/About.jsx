@@ -25,27 +25,28 @@ const About = ({isDarkMode}) => {
          className='text-center text-5xl font-Ovo'>About Me</motion.h2>
 
         <motion.div
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{duration: 0.8}}
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{duration: 0.8}}
+            className='flex w-full flex-col lg:flex-row items-center
+            gap-20 my-20'>
 
-         className='flex w-full flex-col lg:flex-row items-center
-        gap-20 my-20'>
             <motion.div
             initial={{opacity: 0, scale: 0.9}}
             whileInView={{opacity: 1, scale: 1}}
             transition={{duration: 0.6}}
-            
+
             className='w-64 sm:w-80 rounded-3xl max-w-none'>
                 <Image src={assets.my_photo} alt='user' className='w-full
                 rounded-3xl'/>
             </motion.div>
+
             <motion.div
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 0.6, delay: 0.8}}
-            
-            className='flex-1'>
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{duration: 0.6, delay: 0.8}}
+
+                className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'
                 >I am an experienced Full Stack Developer with over 15 years
                  professional expertise in variety of frontend and backend technologies.
@@ -57,13 +58,13 @@ const About = ({isDarkMode}) => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration: 0.8, delay: 1}}
-                
+
                 className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                     {
                         infoList.map(({icon, iconDark, title, description}, i) => (
                             <motion.li
                             whileHover={{scale: 1.05}}
-                                        
+
                             className='border-[0.5px] border-gray-400 rounded-xl
                             p-6 cursor-pointer hover:bg-light-hover
                             hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white
@@ -85,11 +86,11 @@ const About = ({isDarkMode}) => {
                 className='my-6 text-gray-700 font-Ovo dark:text-white/80'>Tools I use</motion.h4>
 
                 <motion.ul
-                initial={{opacity: 0}}
-                whileInView={{opacity: 1}}
-                transition={{duration: 1.5, delay: 0.6}}
-                
-                className='flex items-center gap-3 sm:gap-5'>
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 1.5, delay: 0.6}}
+
+                    className='flex flex-wrap items-center gap-3 sm:gap-5'>
                     {toolsData.map(({icon, tooltip}, i) => (
                         <motion.li
                         whileHover={{ scale: 1.1}}
