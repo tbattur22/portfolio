@@ -35,7 +35,7 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
-import my_profile_pic from './my_profile_pic.png';
+import my_profile_pic from './my_profile_pic.jpeg';
 import my_profile_logo from './profile_logo.png';
 import my_photo from './my_photo.jpg';
 import reactjs from './reactjs.png';
@@ -94,24 +94,44 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Product List Demo Project',
-        description: 'Features: Infinite Scroll/Container Query, Tech Stack: React/JavaScript',
+        title: 'Design Patterns Demo',
+        description: 'Tech Stack: Laravel 12, JavaScript/TailWindCSS. Description: Design Patterns Implementation.',
         bgImage: '/work-1.png',
+        status: 'Initial version completed',
+        url: '',
+        src: 'https://github.com/tbattur22/demo-design-patterns'
+    },
+    {
+        title: 'Product List Demo',
+        description: 'Features: Infinite Scroll/Container Query, Tech Stack: React/JavaScript/CSS',
+        bgImage: '/work-1.png',
+        status: 'Initial version completed',
+        url: 'https://tbattur22.github.io/demo-product-list/',
+        src: 'https://github.com/tbattur22/demo-product-list'
     },
     {
         title: 'Live Chat App',
-        description: 'Tech Stack: Elixir/Phoenix/LiveView',
+        description: 'Tech Stack: Elixir/Phoenix/LiveView/TailWindCSS',
         bgImage: '/work-2.png',
+        status: 'Pending',
+        url: '',
+        src: ''
     },
     {
         title: 'To Do App',
-        description: 'Tech Stack: NextJS/TypeScript',
+        description: 'Tech Stack: NextJS/TypeScript/TailWindCSS',
         bgImage: '/work-3.png',
+        status: 'Pending',
+        url: '',
+        src: ''
     },
     {
         title: 'WebSite Builder',
-        description: 'Tech Stack: ReactJS/Redux/Elixir/Phoenix',
+        description: 'Tech Stack: Elixir/Phoenix for Backend and React/Javascript/CSS for Frontend',
         bgImage: '/work-4.png',
+        status: 'In Progress',
+        url: '',
+        src: ''
     },
 ]
 
