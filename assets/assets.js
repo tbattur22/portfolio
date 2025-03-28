@@ -94,7 +94,7 @@ export const workData = [
     {
         title: 'Design Patterns Demo',
         description: 'Tech Stack: Laravel 12, JavaScript/TailWindCSS. Description: Design Patterns Implementation.',
-        bgImage: '/work-1.png',
+        bgImage: '/portfolio/work-1.png',
         status: 'Initial version completed',
         url: '',
         src: 'https://github.com/tbattur22/demo-design-patterns'
@@ -102,7 +102,7 @@ export const workData = [
     {
         title: 'Product List Demo',
         description: 'Features: Infinite Scroll/Container Query, Tech Stack: React/JavaScript/CSS',
-        bgImage: '/work-1.png',
+        bgImage: '/portfolio/work-1.png',
         status: 'Initial version completed',
         url: 'https://tbattur22.github.io/demo-product-list/',
         src: 'https://github.com/tbattur22/demo-product-list'
@@ -110,7 +110,7 @@ export const workData = [
     {
         title: 'Live Chat App',
         description: 'Tech Stack: Elixir/Phoenix/LiveView/TailWindCSS',
-        bgImage: '/work-2.png',
+        bgImage: '/portfolio/work-2.png',
         status: 'Pending',
         url: '',
         src: ''
@@ -118,7 +118,7 @@ export const workData = [
     {
         title: 'To Do App',
         description: 'Tech Stack: NextJS/TypeScript/TailWindCSS',
-        bgImage: '/work-3.png',
+        bgImage: '/portfolio/work-3.png',
         status: 'Pending',
         url: '',
         src: ''
@@ -126,7 +126,7 @@ export const workData = [
     {
         title: 'WebSite Builder',
         description: 'Tech Stack: Elixir/Phoenix for Backend and React/Javascript/CSS for Frontend',
-        bgImage: '/work-4.png',
+        bgImage: '/portfolio/work-4.png',
         status: 'In Progress',
         url: '',
         src: ''
