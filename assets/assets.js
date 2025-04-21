@@ -109,11 +109,11 @@ export const workData = [
     },
     {
         title: 'Live Chat App',
-        description: 'Tech Stack: Elixir/Phoenix/LiveView/TailWindCSS',
+        description: 'Tech Stack: Laravel/Reverb/React/Typescript/InertiaJS',
         bgImage: '/portfolio/work-2.png',
-        status: 'Pending',
+        status: 'Initial version completed',
         url: '',
-        src: ''
+        src: 'https://github.com/tbattur22/chat-demo'
     },
     {
         title: 'To Do App',
