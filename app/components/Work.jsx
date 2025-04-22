@@ -52,9 +52,9 @@ const Work = ({ isDarkMode }) => {
                             <div className='bg-white w-10/12 rounded-md absolute bottom-1/3 @md:bottom-1/5 lg:bottom-1/6
                     left-1/2 -translate-x-1/2 py-3 px-5 flex flex-1/3 items-center
                     justify-between duration-500 group-hover:bottom-7'>
-                                <div>
+                                <div className='w-full'>
                                     <h2 className='font-semibold'>{project.title}</h2>
-                                    <p className='text-xs text-gray-700'>{project.description}</p>
+                                    <p className='text-[0.5vw] leading-3 text-gray-700'>{project.description}</p>
                                 </div>
                             </div>
                         </motion.div>

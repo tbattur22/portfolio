@@ -109,7 +109,7 @@ export const workData = [
     },
     {
         title: 'Live Chat App',
-        description: 'Tech Stack: Laravel/Reverb/React/Typescript/InertiaJS',
+        description: 'Live Chat using websockets. Tech Stack: Laravel/Reverb/React/Typescript/InertiaJS',
         bgImage: '/portfolio/work-2.png',
         status: 'Initial version completed',
         url: '',
