@@ -41,7 +41,8 @@ import reactjs from './reactjs.png';
 import redux from './redux.png';
 import tailwind from './tailwind.png';
 import nextjs from './Next.js.png';
-import docker from './docker.png'
+import docker from './docker.png';
+import laravel from './laravel.png'
 
 export const assets = {
     my_photo,
@@ -59,6 +60,7 @@ export const assets = {
     tailwind,
     nextjs,
     docker,
+    laravel,
     firebase,
     figma,
     git,
@@ -136,12 +138,12 @@ export const workData = [
 export const serviceData = [
     { icon: assets.web_icon, title: 'Build Frontend UIs and SPA', description: 'A React single-page application (SPA) is a web application that loads a single HTML page and dynamically updates the content as the user interacts with it, without requiring full page reloads. It provides a more fluid and responsive user experience, similar to a desktop application.', link: '' },
     // { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'Build Backend Services', description: 'Design, Implement and Test backend services using PHP and Elixir/Phoenix frameworks.', link: '' },
+    { icon: assets.ui_icon, title: 'Build Backend Services', description: 'Design, Implement and Test backend services using PHP/Laravel and Elixir/Phoenix frameworks.', link: '' },
     { icon: assets.graphics_icon, title: 'Design & Build Database Layer', description: 'Design and implement data storage layer using MySQL/PostGreSQL or MongoDB', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, TypeScript, React Js, Redux, Next Js, PHP, Java, Elixir, MySQL, PostgreSQL' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages/frameworks', description: 'HTML, CSS3, React/JavaScript/TypeScript/Redux/Inertia, PHP/Laravel, Elixir/Phoenix, Java, MySQL, PostgreSQL' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'MSc Degree in Computer Science, University of Birmingham, UK' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Worked on more than 10 projects of various sizes in different companies.' }
 ];
@@ -158,6 +160,10 @@ export const toolsData = [
     {
         icon: assets.tailwind,
         tooltip: "Tailwind CSS"
+    },
+    {
+        icon: assets.laravel,
+        tooltip: "Laravel"
     },
     {
         icon: assets.nextjs,
