@@ -54,7 +54,7 @@ const Work = ({ isDarkMode }) => {
                     justify-between duration-500 group-hover:bottom-7'>
                                 <div className='w-full'>
                                     <h2 className='font-semibold'>{project.title}</h2>
-                                    <p className='text-[0.5vw] leading-3 text-gray-700'>{project.description}</p>
+                                    <p className='text-[2vw] leading-3 text-gray-700 sm:text-[0.8vw] md:text-[0.5vw] md:leading-4'>{project.description}</p>
                                 </div>
                             </div>
                         </motion.div>
