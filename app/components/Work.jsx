@@ -2,17 +2,19 @@
 
 import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'motion/react'
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Github, Linkedin } from "lucide-react";
 
 const Work = ({ isDarkMode }) => {
-    let pathname = '/';
+    const [pathname, setPathname] = useState('/');
+
     useEffect(() => {
         pathname = window.location.pathname;
         console.log(`pathname in useEffect set to `, pathname);
+        setPathname(pathname);
     }, []);
     console.log(`pathname 22`, pathname);
     return (
