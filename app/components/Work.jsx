@@ -12,9 +12,9 @@ const Work = ({ isDarkMode }) => {
     const [pathname, setPathname] = useState('/');
 
     useEffect(() => {
-        pathname = window.location.pathname;
-        console.log(`pathname in useEffect set to `, pathname);
-        setPathname(pathname);
+        const path = window.location.pathname;
+        console.log(`pathname in useEffect set to `, path);
+        setPathname(path);
     }, []);
     console.log(`pathname 22`, pathname);
     return (
