@@ -6,17 +6,15 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'motion/react'
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Github, Linkedin } from "lucide-react";
+// import { Mail, Github, Linkedin } from "lucide-react";
 
 const Work = ({ isDarkMode }) => {
     const [pathname, setPathname] = useState(null);
 
     useEffect(() => {
-        const path = window.location.pathname;
-        console.log(`pathname in useEffect set to `, path);
-        setPathname(path);
+        setPathname(window.location.pathname);
     }, []);
-    console.log(`pathname 22`, pathname);
+
     if (pathname === null) {
         return null;
     }
