@@ -148,7 +148,7 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages/frameworks', description: 'HTML, CSS3, React/JavaScript/TypeScript/Redux/Inertia, PHP/Laravel, Elixir/Phoenix, Java, MySQL, PostgreSQL' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS3, React, JavaScript, TypeScript, ReduxJS, PHP/Laravel, Elixir/Phoenix, Java, MySQL, PostgreSQL' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'MSc Degree in Computer Science, University of Birmingham, UK' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Worked on more than 10 projects of various sizes in different companies.' }
 ];
