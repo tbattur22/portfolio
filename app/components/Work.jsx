@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Github, Linkedin } from "lucide-react";
 
 const Work = ({ isDarkMode }) => {
-    const [pathname, setPathname] = useState('/');
+    const [pathname, setPathname] = useState(null);
 
     useEffect(() => {
         const path = window.location.pathname;
@@ -17,6 +17,10 @@ const Work = ({ isDarkMode }) => {
         setPathname(path);
     }, []);
     console.log(`pathname 22`, pathname);
+    if (pathname === null) {
+        return null;
+    }
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
