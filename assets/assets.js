@@ -97,7 +97,7 @@ export const workData = [
         title: 'Design Patterns Demo',
         description: 'Demo Design Patterns Implementation.',
         technologies: 'Laravel/JavaScript/TailWindCSS.',
-        bgImage: 'work-1.png',
+        bgImage: 'design_patterns.svg',
         status: 'Initial version completed',
         url: 'https://demo-design-patterns-master-0rqesp.laravel.cloud/',
         src: 'https://github.com/tbattur22/demo-design-patterns'
