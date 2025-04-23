@@ -12,8 +12,9 @@ const Work = ({ isDarkMode }) => {
     let pathname = '/';
     useEffect(() => {
         pathname = window.location.pathname;
+        console.log(`pathname in useEffect set to `, pathname);
     }, []);
-    console.log(`pathname`, pathname);
+    console.log(`pathname 22`, pathname);
     return (
         <motion.div
             initial={{ opacity: 0 }}
