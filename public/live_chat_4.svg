@@ -1,0 +1,61 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E3F2FD"/>
+      <stop offset="100%" stop-color="#BBDEFB"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .bubble {
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    .bubble.delay {
+      animation-delay: 0.5s;
+    }
+
+    .text {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: slideUp 1s forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="200" height="100" fill="url(#bgGradient)" rx="15"/>
+
+  <!-- Back bubble -->
+  <path class="bubble delay" d="M110 35h70c4 0 7 3 7 7v18c0 4-3 7-7 7h-40l-10 10v-10h-20c-4 0-7-3-7-7V42c0-4 3-7 7-7z"
+        fill="#E0F7FA" stroke="#00ACC1" stroke-width="2"/>
+
+  <!-- Front bubble -->
+  <path class="bubble" d="M20 15h90c4 0 7 3 7 7v18c0 4-3 7-7 7H55l-15 15v-15H20c-4 0-7-3-7-7V22c0-4 3-7 7-7z"
+        fill="#FFF3E0" stroke="#FB8C00" stroke-width="2"/>
+
+  <!-- Dots -->
+  <circle cx="35" cy="30" r="3" fill="#FB8C00" class="bubble"/>
+  <circle cx="50" cy="30" r="3" fill="#FB8C00" class="bubble"/>
+  <circle cx="65" cy="30" r="3" fill="#FB8C00" class="bubble"/>
+
+  <!-- Text -->
+  <text x="100" y="95" class="text" text-anchor="middle" font-family="Arial, sans-serif"
+        font-size="14" font-weight="bold" fill="#424242">
+    LIVE CHAT
+  </text>
+</svg>

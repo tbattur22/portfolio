@@ -1,9 +1,19 @@
+'use client';
+
 import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'motion/react'
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 const Work = ({ isDarkMode }) => {
+    let pathname = '/';
+    useEffect(() => {
+        pathname = window.location.pathname;
+    });
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -34,49 +44,42 @@ const Work = ({ isDarkMode }) => {
                 showcasing my expertise in both backend and front-end development.
             </motion.p>
 
+            <h3 className="text-2xl font-semibold text-center mb-10">Projects</h3>
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.9, duration: 0.6 }}
 
                 className='grid grid-cols-(--auto-grid-temp-cols) my-10 gap-5 dark:text-black'>
+
                 {workData.map((project, i) => (
-                    <div key={i} className="flex flex-col">
-                        <motion.div
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ duration: 0.3 }}
-                            key={i}
-                            className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg
-                relative cursor-pointer group'
-                            style={{ backgroundImage: `url(${project.bgImage})`, containerType: 'size' }}>
-                            <div className='bg-white w-10/12 rounded-md absolute bottom-1/3 @md:bottom-1/5 lg:bottom-1/6
-                    left-1/2 -translate-x-1/2 py-3 px-5 flex flex-1/3 items-center
-                    justify-between duration-500 group-hover:bottom-7'>
-                                <div className='w-full'>
-                                    <h2 className='font-semibold'>{project.title}</h2>
-                                    <p className='text-[2vw] leading-3 text-gray-700 sm:text-[0.8vw] md:text-[0.5vw] md:leading-4'>{project.description}</p>
-                                </div>
+                    <Card key={i} className="w-80">
+                        <CardContent className="p-4">
+                            <div className="h-32 bg-gray-300 rounded mb-4"><img src={`${pathname}${project.bgImage}`} className="w-full h-full object-cover" /></div>
+                            <h4 className="font-semibold">{project.title}</h4>
+                            <p className="text-sm text-gray-600 mb-2">{project.description}</p>
+                            <p className="text-sm text-gray-500 mb-4">Technologies: {project.technologies}</p>
+                            <div className="flex gap-2">
+                                <Button className="bg-blue-500 hover:bg-blue-600 text-white">
+                                    {project.url ? (
+                                        <a href={project.url} target="_blank">Demo</a>
+                                    ) : (
+                                        <span>Pending</span>
+                                    )}
+                                </Button>
+                                <Button variant="outline">
+                                    {project.src ? (
+                                        <a href={project.src} target="_blank">Code</a>
+                                    ) : (
+                                        <span>Pending</span>
+                                    )}
+
+                                </Button>
                             </div>
-                        </motion.div>
-                        <div className="flex flex-col justify-center items-center">
-                            <div className="flex flex-col">
-                                {project.url &&
-                                    <a id="project_url" href={project.url} target="_blank"
-                                        className="font-bold text-blue-600 dark:text-blue-500 hover:underline">
-                                        Project link
-                                    </a>
-                                }
-                                {project.src ?
-                                    <a id="project_url" href={project.src} target="_blank"
-                                        className="font-bold text-blue-600 dark:text-blue-500 hover:underline">
-                                        Github source
-                                    </a>
-                                    : <span className="text-black dark:text-white">{project.status}</span>
-                                }
-                            </div>
-                        </div>
-                    </div>
+                        </CardContent>
+                    </Card>
                 ))}
+
             </motion.div>
 
             <motion.a

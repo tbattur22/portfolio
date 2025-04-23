@@ -95,40 +95,45 @@ export const assets = {
 export const workData = [
     {
         title: 'Design Patterns Demo',
-        description: 'Tech Stack: Laravel 12, JavaScript/TailWindCSS. Description: Design Patterns Implementation.',
-        bgImage: '/portfolio/work-1.png',
+        description: 'Demo Design Patterns Implementation.',
+        technologies: 'Laravel/JavaScript/TailWindCSS.',
+        bgImage: 'work-1.png',
         status: 'Initial version completed',
         url: 'https://demo-design-patterns-master-0rqesp.laravel.cloud/',
         src: 'https://github.com/tbattur22/demo-design-patterns'
     },
     {
         title: 'Product List Demo',
-        description: 'Features: Infinite Scroll/Container Query, Tech Stack: React/JavaScript/CSS',
-        bgImage: '/portfolio/work-1.png',
+        description: 'Features: Infinite Scroll/Container Query.',
+        technologies: 'React/JavaScript/CSS',
+        bgImage: 'product_list.svg',
         status: 'Initial version completed',
         url: 'https://tbattur22.github.io/demo-product-list/',
         src: 'https://github.com/tbattur22/demo-product-list'
     },
     {
         title: 'Live Chat App',
-        description: 'Live Chat using websockets. Tech Stack: Laravel/Reverb/React/Typescript/InertiaJS',
-        bgImage: '/portfolio/work-2.png',
+        description: 'Live Chat using websockets.',
+        technologies: 'Laravel/Reverb/React/Typescript/InertiaJS',
+        bgImage: 'live_chat_4.svg',
         status: 'Initial version completed',
         url: '',
         src: 'https://github.com/tbattur22/chat-demo'
     },
     {
         title: 'To Do App',
-        description: 'Tech Stack: NextJS/TypeScript/TailWindCSS',
-        bgImage: '/portfolio/work-3.png',
+        description: 'Collaborative Real Time ToDo App',
+        technologies: 'Laravel/Reverb/VueJS/TailWindCSS',
+        bgImage: 'work-3.png',
         status: 'Pending',
         url: '',
         src: ''
     },
     {
         title: 'WebSite Builder',
-        description: 'Tech Stack: Elixir/Phoenix for Backend and React/Javascript/CSS for Frontend',
-        bgImage: '/portfolio/work-4.png',
+        description: 'Demo WebSite Builder App',
+        technologies: 'Elixir/Phoenix, React/Javascript/CSS',
+        bgImage: 'work-4.png',
         status: 'In Progress',
         url: '',
         src: ''
