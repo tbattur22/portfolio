@@ -42,7 +42,8 @@ import redux from './redux.png';
 import tailwind from './tailwind.png';
 import nextjs from './Next.js.png';
 import docker from './docker.png';
-import laravel from './laravel.png'
+import laravel from './laravel.png';
+import inertiajs from './inertiajs.png';
 
 export const assets = {
     my_photo,
@@ -61,6 +62,7 @@ export const assets = {
     nextjs,
     docker,
     laravel,
+    inertiajs,
     firebase,
     figma,
     git,
@@ -94,6 +96,24 @@ export const assets = {
 
 export const workData = [
     {
+        title: 'Task Management Demo',
+        description: 'Simple Task Management Drag and Drop Demo App.',
+        technologies: 'Laravel/InertiaJS/TypeScript/TailWindCSS.',
+        bgImage: 'task_management.png',
+        status: 'Initial version completed',
+        url: 'no',
+        src: 'https://github.com/tbattur22/task_management'
+    },
+    {
+        title: 'Live Chat App',
+        description: 'Live Chat using websockets.',
+        technologies: 'Laravel/Reverb/React/Typescript/InertiaJS',
+        bgImage: 'live_chat_4.svg',
+        status: 'Initial version completed',
+        url: 'no',
+        src: 'https://github.com/tbattur22/chat-demo'
+    },
+    {
         title: 'Design Patterns Demo',
         description: 'Demo Design Patterns Implementation.',
         technologies: 'Laravel/JavaScript/TailWindCSS.',
@@ -112,18 +132,9 @@ export const workData = [
         src: 'https://github.com/tbattur22/demo-product-list'
     },
     {
-        title: 'Live Chat App',
-        description: 'Live Chat using websockets.',
-        technologies: 'Laravel/Reverb/React/Typescript/InertiaJS',
-        bgImage: 'live_chat_4.svg',
-        status: 'Initial version completed',
-        url: '',
-        src: 'https://github.com/tbattur22/chat-demo'
-    },
-    {
         title: 'To Do App',
         description: 'Collaborative Real Time ToDo App',
-        technologies: 'Laravel/Reverb/VueJS/TailWindCSS',
+        technologies: 'Elixir/Phoenix, InertiaJS, React, TypeScript, TailWindCSS',
         bgImage: 'work-3.png',
         status: 'Pending',
         url: '',
@@ -132,7 +143,7 @@ export const workData = [
     {
         title: 'WebSite Builder',
         description: 'Demo WebSite Builder App',
-        technologies: 'Elixir/Phoenix, React/Javascript/CSS',
+        technologies: 'Elixir/Phoenix/LiveView, InertiaJS, React, TypeScript/TailwindCSS',
         bgImage: 'work-4.png',
         status: 'In Progress',
         url: '',
@@ -169,6 +180,10 @@ export const toolsData = [
     {
         icon: assets.laravel,
         tooltip: "Laravel"
+    },
+    {
+        icon: assets.inertiajs,
+        tooltip: "InertiaJS"
     },
     {
         icon: assets.nextjs,

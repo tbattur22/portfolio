@@ -66,11 +66,7 @@ const Work = ({ isDarkMode }) => {
                             <p className="text-sm text-gray-500 mb-4">Technologies: {project.technologies}</p>
                             <div className="flex gap-2">
                                 <Button className="bg-blue-500 hover:bg-blue-600 text-white">
-                                    {project.url ? (
-                                        <a href={project.url} target="_blank">Demo</a>
-                                    ) : (
-                                        <span>Pending</span>
-                                    )}
+                                    {getProjectDemoUrl(project)}
                                 </Button>
                                 <Button variant="outline">
                                     {project.src ? (
@@ -100,6 +96,16 @@ const Work = ({ isDarkMode }) => {
             </motion.a>
         </motion.div>
     )
+}
+
+function getProjectDemoUrl(project) {
+    if (project.url === '') {
+        return <span>Pending</span>;
+    } else if (project.url === 'no') {
+        return <span>No Demo</span>;
+    } else {
+        return <a href={project.url} target="_blank">Demo</a>;
+    }
 }
 
 export default Work
