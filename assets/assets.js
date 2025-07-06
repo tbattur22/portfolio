@@ -132,6 +132,15 @@ export const workData = [
         src: 'https://github.com/tbattur22/demo-product-list'
     },
     {
+        title: 'Hangman Game Demo',
+        description: 'Hangman Game Demo App',
+        technologies: 'Elixir/Phoenix, LiveView, TailWindCSS',
+        bgImage: 'hangman.png',
+        status: 'Completed',
+        url: 'no',
+        src: 'https://github.com/tbattur22/hangman2'
+    },
+    {
         title: 'To Do App',
         description: 'Collaborative Real Time ToDo App',
         technologies: 'Elixir/Phoenix, InertiaJS, React, TypeScript, TailWindCSS',
