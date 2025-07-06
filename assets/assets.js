@@ -44,6 +44,8 @@ import nextjs from './Next.js.png';
 import docker from './docker.png';
 import laravel from './laravel.png';
 import inertiajs from './inertiajs.png';
+import elixir from './elixir.png';
+import phoenix from './phoenix.png';
 
 export const assets = {
     my_photo,
@@ -60,6 +62,8 @@ export const assets = {
     redux,
     tailwind,
     nextjs,
+    elixir,
+    phoenix,
     docker,
     laravel,
     inertiajs,
@@ -197,6 +201,14 @@ export const toolsData = [
     {
         icon: assets.nextjs,
         tooltip: "Next JS"
+    },
+    {
+        icon: assets.elixir,
+        tooltip: "Elixir"
+    },
+    {
+        icon: assets.phoenix,
+        tooltip: "Phoenix framework"
     },
     {
         icon: assets.docker,
